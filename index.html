@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <nav class="menu">  
+        <a class="menu-item" href="#">
+          <div class="menu-item__img"></div>
+          <p class="menu-item__text">Ольга</p>
+        </a>
+        <a class="menu-item" href="#">
+          <div class="menu-item__img"></div>
+          <p class="menu-item__text">Ольга</p>
+        </a>
+        <a class="menu-item" href="#">
+          <div class="menu-item__img"></div>
+          <p class="menu-item__text">Ольга</p>
+        </a>
+        <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-add"></div>              
+            <p class="menu-item__text">Создать новый образ</p>
+        </a>            
+
+        <div class="menu-tools">
+          <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-video"></div>  
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-appointments"></div>  
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-chart"></div>  
+          </a>
+        </div>
+        <div class="menu-set">
+          <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-info"></div>  
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item__img menu-item__img-cog"></div>  
+          </a>
+        </div>
+          
+        
+      </nav>
+
+      <div class="cardaccount">
+
+        <div class="cardaccount-privatinfo">
+          <h3 class="cardaccount-privatinfo__title">Личная информация</h3>
+          <div class="cardaccount-privatinfo__avatar">
+            <div class="cardaccount-privatinfo__avatar-box">
+              <img class="cardaccount-privatinfo__avatar-img" src="images/avatar.jpg" alt="avatar">
+            </div>
+            <div class="cardaccount-privatinfo__avatar-load">
+              <p class="cardaccount-privatinfo__avatar-load--text">Максимальный размер файла для фото или видео профиля - 15 МБ</p>
+              <button class="cardaccount-privatinfo__avatar-load--btn" type="button">Загрузить фото или видео</button> 
+            </div>              
+          </div>
+          <div class="cardaccount-privatinfo__data">              
+            <form class="cardaccount-privatinfo__form" id="person" action="javascript:void(0)">
+
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="first-name">Имя</label>
+                <input class="cardaccount-privatinfo__form-input" id="first-name" type="text" placeholder="Введите имя">
+              </div>
+
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="second-name">Фамилия</label>
+                <input class="cardaccount-privatinfo__form-input" id="second-name" type="text" placeholder="Введите фамилию">
+              </div>
+              
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="user-name">Имя пользователя</label>
+                <input class="cardaccount-privatinfo__form-input" id="user-name" type="text" placeholder="Введите имя">
+              </div>
+
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="type-working">Вид деятельности</label>
+                <input class="cardaccount-privatinfo__form-input" id="type-working" type="text" placeholder="Преподаватель">
+              </div>
+              
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="my-links">Мои ссылки</label>
+                <a class="cardaccount-privatinfo__form-link" href="https://www.behance.net/">https://www.behance.net/</a>
+                <input class="cardaccount-privatinfo__form-input" id="my-links" type="text" placeholder="Введите ссылку">
+              </div>
+
+              <div class="cardaccount-privatinfo__form-item">
+                <label for="about">О себе</label>
+                <textarea class="cardaccount-privatinfo__form-textarea" name="text" placeholder="Расскажите немного о себе"></textarea>
+              </div>
+
+            </form>        
+          </div>
+        </div>
+
+        <div class="cardaccount-contacts">
+          <h3 class="cardaccount-contacts__title">Контактные даные</h3>
+          <form class="cardaccount-contacts__form" id="location" action="javascript:void(0)">
+            <div class="cardaccount-contacts__form-item">
+              <label for="country">Место расположения</label>
+              <input class="cardaccount-contacts__form-input cardaccount-contacts__form-input-arrow" id="country" type="text" placeholder="Россия">  
+            </div>         
+            <div class="cardaccount-contacts__form-item">
+              <input class="cardaccount-contacts__form-input" id="city" type="text" placeholder="Город проживания">
+            </div>            
+            <div class="cardaccount-contacts__form-item">
+              <label for="email">Эл. адрес</label>
+              <input class="cardaccount-contacts__form-input" id="email" type="email" placeholder="Введите ваш Email">
+            </div>
+            <div class="cardaccount-contacts__form-item">
+              <label for="phone">Номер телефона</label>
+              <input class="cardaccount-contacts__form-input" id="phone" type="phone" placeholder="38 (099) 568 432 3">
+            </div>            
+            <div class="cardaccount-contacts__form-item">
+              <label for="web-site">Личный сайт</label>
+              <input class="cardaccount-contacts__form-input" id="web-site" type="text" placeholder="Введите URL">
+            </div>
+          </form>
+
+          <div class="cardaccount-contacts__profile">
+            <div class="cardaccount-contacts__profile-view">
+              <h4 class="cardaccount-contacts__profile-title">Показать в профиле</h4>
+              <p class="cardaccount-contacts__profile-text">Ваши контактные даные будут отображаться в Вашем профиле.</p>
+            </div>
+            
+            <label class="cardaccount-contacts__profile-switch">
+              <input class="cardaccount-contacts__profile-switch-input" type="checkbox" name="switch">
+              <span class="cardaccount-contacts__profile-switch-slider cardaccount-contacts__profile-switch-round"></span>
+            </label>
+          </div>
+        </div> 
+        
+
+        <div class="cardaccount-delete">
+          <h3 class="cardaccount-delete__title">Безвозвратное удаление аккаунта</h3>
+          <div class="cardaccount-delete__info">
+            <h4 class="cardaccount-delete__info-title">Аккаунт удаляется навсегда.</h4>
+            <div class="cardaccount-delete__info-box">
+              <p class="cardaccount-delete__info-text">После удаления аккаунта на ---------  вы не сможете восстановить доступ к размещенным материалам и информации. <br>Мессенджер и сообщения также будут удалены.</p>
+              <button class="cardaccount-delete__btn" type="button">Удалить</button>
+            </div> 
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+  <div> 
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
